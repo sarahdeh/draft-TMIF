@@ -2,10 +2,12 @@
 
 
 
-Network Working Group                       B. L. T. S. P. A. S. D. Haas
-Internet-Draft                                               Google, LLC
-Intended status: Informational                           19 October 2025
-Expires: 22 April 2026
+Network Working Group                                          B. Laurie
+Internet-Draft                                                T. Santoro
+Intended status: Informational                            P. Anthonysamy
+Expires: 22 April 2026                                       S. de. Haas
+                                                              Google LLC
+                                                         19 October 2025
 
 
         A Standard for Claiming Transparency and Falsifiability
@@ -67,7 +69,7 @@ Table of Contents
    8.  Security Considerations
    9.  IANA Considerations
    Acknowledgments
-   Author's Address
+   Authors' Addresses
 
 1.  Introduction
 
@@ -418,9 +420,23 @@ Acknowledgments
 
    TODO acknowledge.
 
-Author's Address
+Authors' Addresses
 
-   Ben Laurie, Tiziano Santoro, Pauline Anthonysamy, Sarah de Haas
-   Google, LLC
-   Email: benl@google.com, tzn@google.com, anthonysp@google.com,
-   dehaass@google.com
+   Ben Laurie
+   Google LLC
+   Email: benl@google.com
+
+
+   Tiziano Santoro
+   Google LLC
+   Email: tzn@google.com
+
+
+   Pauline Anthonysamy
+   Google LLC
+   Email: anthonysp@google.com
+
+
+   Sarah de Haas
+   Google LLC
+   Email: dehaass@google.com
