@@ -13,11 +13,18 @@ v: 1
 
 
 author:
- -
-    fullname: Ben Laurie, Tiziano Santoro, Pauline Anthonysamy, Sarah de Haas
-    organization: Google, LLC
-    email: benl@google.com, tzn@google.com, anthonysp@google.com, dehaass@google.com
-
+ - name: Ben Laurie
+   organization: Google LLC
+   email: benl@google.com
+ - name: Tiziano Santoro
+   organization: Google LLC
+   email: tzn@google.com
+ - name: Pauline Anthonysamy
+   organization: Google LLC
+   email: anthonysp@google.com
+ - name: Sarah de Haas
+   organization: Google LLC
+   email: dehaass@google.com
 normative:
 
 informative:
