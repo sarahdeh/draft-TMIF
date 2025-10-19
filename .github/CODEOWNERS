@@ -1,0 +1,3 @@
+# Automatically generated CODEOWNERS
+# Regenerate with `make update-codeowners`
+draft-ietf-laurie-tmif.md benl@google.com, tzn@google.com, anthonysp@google.com, dehaass@google.com
