@@ -2,7 +2,7 @@
 
 # A Standard for Claiming Transparency and Falsifiability
 
-This is the working area for the IETF [Internet-Draft, "A Standard for Claiming Transparency and Falsifiability".
+This is the working area for the IETF Internet-Draft, "A Standard for Claiming Transparency and Falsifiability".
 
 * [Editor's Copy](https://sarahdeh.github.io/draft-TMIF/#go.draft-ietf-laurie-tmif.html)
 * [Datatracker Page](https://datatracker.ietf.org/doc/draft-ietf-laurie-tmif)
