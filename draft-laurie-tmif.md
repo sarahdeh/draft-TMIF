@@ -3,7 +3,7 @@ title: "A Standard for Claiming Transparency and Falsifiability"
 abbrev: "TMIF"
 category: info
 
-docname: draft-ietf-laurie-tmif-latest
+docname: draft-laurie-tmif-latest
 submissiontype: IETF  # also: "independent", "editorial", "IAB", or "IRTF"
 number:
 date:
