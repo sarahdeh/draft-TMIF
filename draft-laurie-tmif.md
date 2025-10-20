@@ -31,11 +31,6 @@ informative:
 
 ...
 
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
-"SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY",
- and "OPTIONAL" in this document are to be interpreted as
- described in BCP 14 [RFC2119] [RFC8174] when, and only when, they
- appear in all capitals, as shown here.
 
 --- abstract
 
@@ -96,7 +91,7 @@ A cryptographic process that provides a remote client with verifiable proof of t
 
 1. The hardware is a genuine TEE from a specific manufacturer.
 2. The correct, unmodified application binaries are running within it.
-3. The TEE’s software version.
+3. The TEE's software version.
 
 The attestation allows the client to verify the integrity of the trusted environment before provisioning it with any sensitive data.
 
@@ -134,7 +129,7 @@ How can it be falsified?
 
 - *Binary Transparency:* When a binary is publicly available, anyone can download it to perform reverse engineering and search for backdoors. A higher level of assurance is achieved when the binary is open source and has a reproducible build. This allows anyone to build the binary from the public source code and confirm that the resulting binary matches the one being attested to by the TEE, providing strong confidence that the running code corresponds to the public source code.
 
-_Claim: Data that leaves the TEE is limited to privacy preserving, aggregated analytics, and it’s not possible to link it to a specific user._
+_Claim: Data that leaves the TEE is limited to privacy preserving, aggregated analytics, and it's not possible to link it to a specific user._
 
 How can it be falsified?
 - *Non-targetability:* One could attempt to falsify this claim by analyzing the egressed data to demonstrate a method for de-anonymization and re-linking to an individual.
@@ -267,7 +262,7 @@ _Publicly available remote attestation evidence_
 public_remote_attestation
 Expected value: path to attestation endpoint
 
-In order to confirm that the binaries published in the verifiable audit log are the same binaries that run on the server, it is necessary to inspect the remote attestation from the TEE. At higher transparency levels this inspection SHOULD be possible for anyone, in principle, to complete, therefore it MUST be made possible for an attestation request to be made from any machine.
+In order to confirm that the binaries published in the verifiable audit log are the same binaries that run on the server, it is necessary to inspect the remote attestation from the TEE. At higher transparency levels this inspection should be possible for anyone, in principle, to complete, therefore it must be made possible for an attestation request to be made from any machine.
 
 _Auditability_
 
