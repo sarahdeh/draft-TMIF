@@ -5,9 +5,9 @@
 Network Working Group                                          B. Laurie
 Internet-Draft                                                T. Santoro
 Intended status: Informational                            P. Anthonysamy
-Expires: 22 April 2026                                       S. de. Haas
+Expires: 23 April 2026                                       S. de. Haas
                                                               Google LLC
-                                                         19 October 2025
+                                                         20 October 2025
 
 
         A Standard for Claiming Transparency and Falsifiability
@@ -41,7 +41,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 22 April 2026.
+   This Internet-Draft will expire on 23 April 2026.
 
 Copyright Notice
 
@@ -76,7 +76,7 @@ Table of Contents
    As AI powered consumer facing features proliferate, AI service
    providers and users are grappling with increasing amounts of user
    discomfort over the increasing amounts of sensitive data powered by
-   these systems.  While this isn’t a new problem, AI accelerates the
+   these systems.  While this isn't a new problem, AI accelerates the
    need to process sensitive information in order to provide significant
    advances in utility.  However, many consumers want to be reassured
    that there are strict limits on how their data is used, who can
@@ -97,9 +97,9 @@ Table of Contents
    claim.
 
    A high degree of transparency means that end consumers, or their
-   delegates, can assure themselves that a service provider’s privacy
-   claims about the usage and handling of their data are very likely
-   true because of the high technical bar that would have to be met to
+   delegates, can assure themselves that a service provider's claims
+   about the usage and handling of their data are very likely true
+   because of the high technical bar that would have to be met to
    undermine those claims without discovery.  It is also possible to
    incentivize third parties and independent researchers to focus their
    efforts towards finding falsifying examples of privacy and security
@@ -157,7 +157,7 @@ Table of Contents
    _Remote attestation_
 
    A cryptographic process that provides a remote client with verifiable
-   proof of the TEE’s state.  The service generates a signed report, or
+   proof of the TEE's state.  The service generates a signed report, or
    attestation, that proves key information:
 
    1.  The hardware is a genuine TEE from a specific manufacturer.
@@ -266,12 +266,12 @@ Table of Contents
    determine whether they trust the claimant based on the evidence
    provided.  We expect the evaluator to calculate an algorithmic
    assessment based on the provided values.  The evaluator can
-   separately publish their own requirements for the claimant’s system.
+   separately publish their own requirements for the claimant's system.
 
 6.  Transparency Levels
 
    We expect that the evaluators will calculate an algorithmic
-   assessment that would class the service provider’s claims in
+   assessment that would class the service provider's claims in
    different levels or buckets of transparency and falsifiability.  The
    following levels are proposed 1. binary is publicly available 2.  L1
    + is executable 3.  L2 + is reproducibly buildable 4.  Source is
@@ -383,7 +383,7 @@ Table of Contents
 
    In order to provide meaning to binaries published in a verifiable
    audit log, it is necessary to match them to associated source code.
-   Therefore published source code that is intended as part of a ‘proof’
+   Therefore published source code that is intended as part of a 'proof'
    of system behavior must be reproducibly buildable to match the
    published binaries.
 
@@ -403,7 +403,7 @@ Table of Contents
 
    data_egress_audit_logs Expected value: location of log
 
-   If highly privileged ‘break glass’ type access is used, this field
+   If highly privileged 'break glass' type access is used, this field
    can be used to declare an audit log that ensures that this type of
    access cannot be used secretly
 
