@@ -31,6 +31,12 @@ informative:
 
 ...
 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY",
+ and "OPTIONAL" in this document are to be interpreted as
+ described in BCP 14 [RFC2119] [RFC8174] when, and only when, they
+ appear in all capitals, as shown here.
+
 --- abstract
 
 This document specifies a transparency metadata interface format that allows a system to make claims about its levels of transparency and falsifiability.
@@ -40,11 +46,11 @@ This document specifies a transparency metadata interface format that allows a s
 
 # Introduction
 
-As AI powered consumer facing features proliferate, AI service providers and users are grappling with increasing amounts of user discomfort over the increasing amounts of sensitive data powered by these systems. While this isn’t a new problem, AI accelerates the need to process sensitive information in order to provide significant advances in utility. However, many consumers want to be reassured that there are strict limits on how their data is used, who can access it, and for what purpose. For that reason, we see an increasing trend to introduce transparency into privacy preserving systems, giving service providers a way to make strong claims about how data is handled, and users a way to independently verify those claims. Transparency approaches can, however, be radically different, therefore some consistency in definitions and terminology is required in order to allow end users (or their delegates) to examine these systems in detail and assess the overall falsifiability of the claims they make.
+As AI powered consumer facing features proliferate, AI service providers and users are grappling with increasing amounts of user discomfort over the increasing amounts of sensitive data powered by these systems. While this isn't a new problem, AI accelerates the need to process sensitive information in order to provide significant advances in utility. However, many consumers want to be reassured that there are strict limits on how their data is used, who can access it, and for what purpose. For that reason, we see an increasing trend to introduce transparency into privacy preserving systems, giving service providers a way to make strong claims about how data is handled, and users a way to independently verify those claims. Transparency approaches can, however, be radically different, therefore some consistency in definitions and terminology is required in order to allow end users (or their delegates) to examine these systems in detail and assess the overall falsifiability of the claims they make.
 
 This document therefore defines a Transparency Metadata Interchange Format (TMIF) for describing levels of transparency achieved by such a system, in order to effectively allow independent auditors to determine the overall level of transparency that the system can claim.
 
-A high degree of transparency means that end consumers, or their delegates, can assure themselves that a service provider’s privacy claims about the usage and handling of their data are very likely true because of the high technical bar that would have to be met to undermine those claims without discovery. It is also possible to incentivize third parties and independent researchers to focus their efforts towards finding falsifying examples of privacy and security claims.
+A high degree of transparency means that end consumers, or their delegates, can assure themselves that a service provider's claims about the usage and handling of their data are very likely true because of the high technical bar that would have to be met to undermine those claims without discovery. It is also possible to incentivize third parties and independent researchers to focus their efforts towards finding falsifying examples of privacy and security claims.
 
 
 
@@ -86,7 +92,7 @@ The machine that serves user requests. In a distributed system, this includes al
 
 _Remote attestation_
 
-A cryptographic process that provides a remote client with verifiable proof of the TEE’s state. The service generates a signed report, or attestation, that proves key information:
+A cryptographic process that provides a remote client with verifiable proof of the TEE's state. The service generates a signed report, or attestation, that proves key information:
 
 1. The hardware is a genuine TEE from a specific manufacturer.
 2. The correct, unmodified application binaries are running within it.
@@ -142,11 +148,11 @@ The claimant will perform the following functions:
 - Specification of the application level claims, for example that an application keeps data private from the service provide
 - Adding any additional fields that might help to increase the overall falsifiability level of the application level claims
 
-The evaluator will assess the information provided by the TMIF and determine whether they trust the claimant based on the evidence provided. We expect the evaluator to calculate an algorithmic assessment based on the provided values. The evaluator can separately publish their own requirements for the claimant’s system.
+The evaluator will assess the information provided by the TMIF and determine whether they trust the claimant based on the evidence provided. We expect the evaluator to calculate an algorithmic assessment based on the provided values. The evaluator can separately publish their own requirements for the claimant's system.
 
 # Transparency Levels
 
-We expect that the evaluators will calculate an algorithmic assessment that would class the service provider’s claims in different levels or buckets of transparency and falsifiability. The following levels are proposed
+We expect that the evaluators will calculate an algorithmic assessment that would class the service provider's claims in different levels or buckets of transparency and falsifiability. The following levels are proposed
 1. binary is publicly available
 2. L1 + is executable
 3. L2 + is reproducibly buildable
@@ -252,7 +258,7 @@ _Reproducible builds_
 reproducible_builds
 Expected value: boolean
 
-In order to provide meaning to binaries published in a verifiable audit log, it is necessary to match them to associated source code. Therefore published source code that is intended as part of a ‘proof’ of system behavior must be reproducibly buildable to match the published binaries.
+In order to provide meaning to binaries published in a verifiable audit log, it is necessary to match them to associated source code. Therefore published source code that is intended as part of a 'proof' of system behavior must be reproducibly buildable to match the published binaries.
 
 
 
@@ -268,7 +274,7 @@ _Auditability_
 data_egress_audit_logs
 Expected value: location of log
 
-If highly privileged ‘break glass’ type access is used, this field can be used to declare an audit log that ensures that this type of access cannot be used secretly
+If highly privileged 'break glass' type access is used, this field can be used to declare an audit log that ensures that this type of access cannot be used secretly
 
 
 
