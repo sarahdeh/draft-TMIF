@@ -1225,7 +1225,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
           <p id="section-2-16.2.1">The correct, unmodified application binaries are running within it.<a href="#section-2-16.2.1" class="pilcrow">¶</a></p>
 </li>
         <li id="section-2-16.3">
-          <p id="section-2-16.3.1">The TEE’s software version.<a href="#section-2-16.3.1" class="pilcrow">¶</a></p>
+          <p id="section-2-16.3.1">The TEE's software version.<a href="#section-2-16.3.1" class="pilcrow">¶</a></p>
 </li>
       </ol>
 <p id="section-2-17">The attestation allows the client to verify the integrity of the trusted environment before provisioning it with any sensitive data.<a href="#section-2-17" class="pilcrow">¶</a></p>
@@ -1261,7 +1261,7 @@ svg :is([fill="white"], [fill^="#fff"]) {
           <p id="section-4-3.1.1"><em>Binary Transparency:</em> When a binary is publicly available, anyone can download it to perform reverse engineering and search for backdoors. A higher level of assurance is achieved when the binary is open source and has a reproducible build. This allows anyone to build the binary from the public source code and confirm that the resulting binary matches the one being attested to by the TEE, providing strong confidence that the running code corresponds to the public source code.<a href="#section-4-3.1.1" class="pilcrow">¶</a></p>
 </li>
       </ul>
-<p id="section-4-4"><em>Claim: Data that leaves the TEE is limited to privacy preserving, aggregated analytics, and it’s not possible to link it to a specific user.</em><a href="#section-4-4" class="pilcrow">¶</a></p>
+<p id="section-4-4"><em>Claim: Data that leaves the TEE is limited to privacy preserving, aggregated analytics, and it's not possible to link it to a specific user.</em><a href="#section-4-4" class="pilcrow">¶</a></p>
 <p id="section-4-5">How can it be falsified?
 - <em>Non-targetability:</em> One could attempt to falsify this claim by analyzing the egressed data to demonstrate a method for de-anonymization and re-linking to an individual.<a href="#section-4-5" class="pilcrow">¶</a></p>
 </section>
@@ -1350,7 +1350,7 @@ Expected value: boolean<a href="#section-7-30" class="pilcrow">¶</a></p>
 <p id="section-7-32"><em>Publicly available remote attestation evidence</em><a href="#section-7-32" class="pilcrow">¶</a></p>
 <p id="section-7-33">public_remote_attestation
 Expected value: path to attestation endpoint<a href="#section-7-33" class="pilcrow">¶</a></p>
-<p id="section-7-34">In order to confirm that the binaries published in the verifiable audit log are the same binaries that run on the server, it is necessary to inspect the remote attestation from the TEE. At higher transparency levels this inspection SHOULD be possible for anyone, in principle, to complete, therefore it MUST be made possible for an attestation request to be made from any machine.<a href="#section-7-34" class="pilcrow">¶</a></p>
+<p id="section-7-34">In order to confirm that the binaries published in the verifiable audit log are the same binaries that run on the server, it is necessary to inspect the remote attestation from the TEE. At higher transparency levels this inspection should be possible for anyone, in principle, to complete, therefore it must be made possible for an attestation request to be made from any machine.<a href="#section-7-34" class="pilcrow">¶</a></p>
 <p id="section-7-35"><em>Auditability</em><a href="#section-7-35" class="pilcrow">¶</a></p>
 <p id="section-7-36">data_egress_audit_logs
 Expected value: location of log<a href="#section-7-36" class="pilcrow">¶</a></p>
