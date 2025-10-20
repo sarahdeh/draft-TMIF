@@ -11,7 +11,7 @@ Expires: 23 April 2026                                       S. de. Haas
 
 
         A Standard for Claiming Transparency and Falsifiability
-                        draft-laurie-tmif-latest
+                     draft-ietf-laurie-tmif-latest
 
 Abstract
 
